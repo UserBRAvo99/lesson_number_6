@@ -482,23 +482,46 @@
           </svg>
         </button>
         <b class="form_title">Залиште свої дані, ми вам передзвонимо</b>
-        <form action="" class="modal_window_form">
-          <label for="name">Ім'я</label>
-          <input type="text" name="name" id="name" />
-          <label for="tel">Телефон</label>
-          <input type="text" name="tel" id="tel" />
-          <label for="mail">Пошта</label>
-          <input type="text" name="mail" id="mail" />
-          <label for="comment">Коментар</label>
-          <textarea
-            name="comment"
-            id="comment"
-            cols="30"
-            rows="10"
-            placeholder="Введіть текст"
-          ></textarea>
-          <button type="submit" class="window_form_button">Відправити</button>
-        </form>
+        <div class="bloc_form">
+          <form action="" class="modal_window_form">
+            <label for="name">Ім'я</label>
+            <div class="bloc_input_name">
+              <input class="modal_form_input_name" type="text" name="name" id="name" />
+              <span class="bloc_icone_form_name">
+                <svg class="icone_modal_form_name" width="12" height="12">
+                  <use href="./images/icons/symbol-defs.svg#icon-user-name-icone"></use>
+                </svg>
+              </span>
+            </div>
+            <label for="tel">Телефон</label>
+            <div class="bloc_input_tell">
+              <input class="modal_form_input_tell" type="text" name="tel" id="tel" />
+              <span class="bloc_icone_form_tell">
+                <svg class="icone_modal_form_tell" width="13" height="13">
+                  <use href="./images/icons/symbol-defs.svg#icon-user-tell-icone"></use>
+                </svg>
+              </span>
+            </div>
+            <label for="mail">Пошта</label>
+            <div class="bloc_input_email">
+              <input class="modal_form_input_email" type="text" name="mail" id="mail" />
+              <span class="bloc_icone_form_email">
+                <svg class="icone_modal_form_email" width="15" height="12">
+                  <use href="./images/icons/symbol-defs.svg#icon-user-email-icone"></use>
+                </svg>
+              </span>
+            </div>
+            <label for="comment">Коментар</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введіть текст"
+            ></textarea>
+            <button type="submit" class="window_form_button">Відправити</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/model.js"></script>
