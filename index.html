@@ -456,6 +456,22 @@
             </li>
           </ul>
         </div>
+        <div class="bloc_form_subscription">
+          <form class="form_subscription">
+            <label class="title_subscription" for="email">Підпишіться на розсилку</label>
+            <div class="email_block_subscription">
+              <input
+                class="email_subscription"
+                type="mail"
+                placeholder="E-mail"
+                name="email"
+                id="email"
+                autocomplete="on"
+              />
+              <button type="submit" class="buttom_subscription">Підписатися</button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div data-modal class="backdrop is_hidden">
@@ -465,6 +481,24 @@
             <use href="./images/icons/symbol-defs.svg#icon-close-modal"></use>
           </svg>
         </button>
+        <b class="form_title">Залиште свої дані, ми вам передзвонимо</b>
+        <form action="" class="modal_window_form">
+          <label for="name">Ім'я</label>
+          <input type="text" name="name" id="name" />
+          <label for="tel">Телефон</label>
+          <input type="text" name="tel" id="tel" />
+          <label for="mail">Пошта</label>
+          <input type="text" name="mail" id="mail" />
+          <label for="comment">Коментар</label>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Введіть текст"
+          ></textarea>
+          <button type="submit" class="window_form_button">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/model.js"></script>
