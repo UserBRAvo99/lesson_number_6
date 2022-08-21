@@ -462,13 +462,18 @@
             <div class="email_block_subscription">
               <input
                 class="email_subscription"
-                type="mail"
+                type="email"
                 placeholder="E-mail"
                 name="email"
                 id="email"
                 autocomplete="on"
               />
-              <button type="submit" class="buttom_subscription">Підписатися</button>
+              <button type="submit" class="buttom_subscription">
+                Підписатися
+                <svg class="icon_form_button" width="24" height="24">
+                  <use href="./images/icons/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>
@@ -483,8 +488,8 @@
         </button>
         <b class="form_title">Залиште свої дані, ми вам передзвонимо</b>
         <div class="bloc_form">
-          <form action="" class="modal_window_form">
-            <label for="name">Ім'я</label>
+          <form class="modal_window_form">
+            <label class="label_name" for="name">Ім'я</label>
             <div class="bloc_input_name">
               <input class="modal_form_input_name" type="text" name="name" id="name" />
               <span class="bloc_icone_form_name">
@@ -493,7 +498,7 @@
                 </svg>
               </span>
             </div>
-            <label for="tel">Телефон</label>
+            <label class="label_tell" for="tel">Телефон</label>
             <div class="bloc_input_tell">
               <input class="modal_form_input_tell" type="text" name="tel" id="tel" />
               <span class="bloc_icone_form_tell">
@@ -502,16 +507,16 @@
                 </svg>
               </span>
             </div>
-            <label for="mail">Пошта</label>
+            <label class="label_email" for="email">Пошта</label>
             <div class="bloc_input_email">
-              <input class="modal_form_input_email" type="text" name="mail" id="mail" />
+              <input class="modal_form_input_email" type="email" name="email" id="email" />
               <span class="bloc_icone_form_email">
                 <svg class="icone_modal_form_email" width="15" height="12">
                   <use href="./images/icons/symbol-defs.svg#icon-user-email-icone"></use>
                 </svg>
               </span>
             </div>
-            <label for="comment">Коментар</label>
+            <label class="label_comment" for="comment">Коментар</label>
             <textarea
               name="comment"
               id="comment"
@@ -519,6 +524,18 @@
               rows="10"
               placeholder="Введіть текст"
             ></textarea>
+            <div class="bloc_checkbox">
+              <label class="label_checkbox">
+                <input type="checkbox" class="checkbox_modal_form" />
+                <span class="checkbox_bloc">
+                  <svg class="checkbox" width="11" height="8">
+                    <use href="./images/icons/symbol-defs.svg#icon-vector-check"></use>
+                  </svg>
+                </span>
+                Погоджуюся з розсилкою та приймаю
+              </label>
+              <a href="#" class="checkbox_link">Умови договору</a>
+            </div>
             <button type="submit" class="window_form_button">Відправити</button>
           </form>
         </div>
